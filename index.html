@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="API, NASA API, web development, Space" />
+    <title>My Website on Data Visualisation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <label for="logo" class="logo">Space Things</label>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="design.html">Designs</a></li>
+        <li><a href="data-visualisations.html">Data Visualisations</a></li>
+        <li><a href="data-art.html">Data Art</a></li>
+      </ul>
+    </nav>
+
+    <div class="textbox" id="index">
+      <h1>Space Things</h1>
+      <p>
+        The aim of this website is to inform you about a certain aspect of
+        NASA's live data. The website will make use of a NASA API and represent
+        it through data-visualisation. I hope you enjoy your adventure through
+        this website!
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext" id="index">1/5</div>
+        <img
+          src="Images/guillermo-ferla-lLExhYl-cXQ-unsplash.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2/5</div>
+        <img
+          src="Images/bryan-goff-f7YQo-eYHdM-unsplash.jpg"
+          style="width: 100%"
+        />
+        <div class="textbox2">
+          <h1>The Blog Page</h1>
+          <p>
+            The blog page is where you can find all the interesting
+            thoughts,ideas and opinions I have. When you navigate to the Blog
+            Page you will find blog one and blog two(This one is just a
+            placeholder for now). Enjoy your learning!!
+          </p>
+          <button onclick="GoToBlogsPage()" id="blogsBtn">Blogs</button>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img
+          src="Images/paul-volkmer-qVotvbsuM_c-unsplash.jpg"
+          style="width: 100%"
+        />
+        <div class="textbox3">
+          <h1>The Design Page</h1>
+          <p>
+            The design page is where you can really dive into my thought process
+            and creative process while I was creating this website. It comes
+            with all the bits and bobs needed to assemble this finished
+            product(prototype). It is obviously not as complex as what NASA's
+            APIs are but its close enough!
+          </p>
+          <button onclick="GoToDesignPage()" id="designBtn">Designs</button>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="Images/nasa-Q1p7bh3SHj8-unsplash.jpg" style="width: 100%" />
+        <div class="textbox4">
+          <h1>The Data Visualisation Page</h1>
+          <p>
+            This is where all the real fun is! The data-visualisation page is
+            where you can find NASA's live data constructed and formulated in a
+            way that we all can understand. Simple, beautiful and effective.
+            (placeholder).
+          </p>
+          <button onclick="GoToDataVisPage()" id="dataVisBtn">
+            Data Visualisations
+          </button>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img
+          src="Images/cristofer-maximilian-IgX2o2_xAZc-unsplash.jpg"
+          style="width: 100%"
+        />
+        <div class="textbox5">
+          <h1>The Data Art Page</h1>
+          <p>
+            This page follows suit of the data-visualisation page. It comes with
+            just as important information and just as much beauty! May your
+            understanding of what data-art is develop after visiting this page!
+            (placeholder).
+          </p>
+          <button onclick="GoToDataArtPage()" id="dataArtBtn">Data Art</button>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+  </body>
+</html>

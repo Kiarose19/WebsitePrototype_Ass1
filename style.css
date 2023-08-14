@@ -1,0 +1,502 @@
+body{
+    font-family: fantasy;
+    background: url(Images/guillermo-ferla-lLExhYl-cXQ-unsplash.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+nav{
+    background: rgba(13, 13, 64, 0.51);
+    backdrop-filter: blur(7px);
+    height: 100px;
+    width: 100%;
+}
+
+.content{
+    padding: 16px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content{
+    padding-top: 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 24px;
+    margin-top: 10px;
+    position: relative;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: blue;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.logo{
+    color: blue;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0 50px;
+}
+
+#blogsBtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(76, 76, 245);
+    margin-bottom: 15px;
+}
+
+#blogsBtn:hover{
+    background-color: grey;
+}
+
+#designBtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(76, 76, 245);
+    margin-bottom: 15px;
+}
+
+#designBtn:hover{
+    background-color: grey;
+}
+
+#dataVisBtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(76, 76, 245);
+    margin-bottom: 15px;
+}
+
+#dataVisBtn:hover{
+    background-color: grey;
+}
+
+#dataArtBtn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(76, 76, 245);
+    margin-bottom: 15px;
+}
+
+#dataArtBtn:hover{
+    background-color: grey;
+}
+
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    border: 3px solid white;
+}
+
+*{box-sizing: border-box;}
+
+.textbox2{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(173, 216, 230, 0.667);
+    margin-top: 175px;
+}
+
+.textbox3{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(173, 216, 230, 0.667);
+    margin-top: 175px;
+}
+
+.textbox4{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(173, 216, 230, 0.667);
+    margin-top: 175px;
+}
+
+.textbox5{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    border: 3px solid white;
+    background: rgba(173, 216, 230, 0.667);
+    margin-top: 175px;
+}
+
+.slideshow-container {
+    height: 100vh;
+    max-width: fit-content;
+    background-size: cover;
+}
+
+.mySlides{
+    display: none;
+    height: 100vh;
+    background-size: cover;
+}
+
+.text{
+    color: #f2f2f2;
+    font-size: large;
+    text-align: center;
+    border: 3px solid white;
+}
+
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.information{
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease background-color;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+/*------Blogs Page-----*/
+
+.header{
+    text-align: center;
+    color:white ;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.header h1{
+    margin-top: 50px;
+}
+
+.blog1 p{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid blue;
+}
+
+.blog1 h2{
+    text-align: left;
+    margin-top: 60px;
+    color: blue;
+}
+
+.blog2 p{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid blue;
+}
+
+.blog2 h3{
+    text-align: left;
+    margin-top: 60px;
+    color: blue;
+}
+
+/*-------Design Page-------*/
+
+.Wireframes {
+    text-align: center;
+    color:white ;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.Wireframes .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px ;
+}
+
+.Wireframes-col{
+    flex: 25%;
+    max-width: 35%;
+    padding: 0px 12px;
+}
+
+.Wireframes-col img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.Wireframes-col:hover{
+    background-color: rgba(173, 216, 230, 0.723);
+}
+
+.Wireframes .row2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px ;
+}
+
+.Wireframes-col2{
+    flex: 25%;
+    max-width: 35%;
+    padding: 8px 12px;
+}
+
+.Wireframes-col2 img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    margin-left: 200px;
+}
+
+.Wireframes-col2 h2{
+    text-align: right;
+    margin-left: 100px;
+}
+
+.styles h4{
+    border: 3px solid blue;
+    color: white;
+    background: lightblue;
+    font-size: larger;
+}
+
+.styles h5{
+    border: 3px solid blue;
+    color: white;
+    background: lightblue;
+    font-size: larger;
+}
+
+.styles p{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 55px;
+    border: 3px solid blue;
+}
+
+/*--------Data Visualisation Page--------*/
+
+.data-vis{
+    text-align: center;
+    color:white ;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.data-vis h1{
+    margin-top: 50px;
+}
+
+.data-vis1 p{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid white;
+}
+
+.data-vis1 h2{
+    text-align: left;
+    margin-top: 60px;
+}
+
+.data-vis2 p{
+    flex-basis: 50%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid white;
+}
+
+.data-vis2 h3{
+    text-align: left;
+    margin-top: 60px;
+}
+
+/*--------Data Art Page--------*/
+
+.data-art {
+    text-align: center;
+    color:white ;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.data-art .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px ;
+}
+
+.data-art-col{
+    flex: 25%;
+    max-width: 35%;
+    padding: 0px 12px;
+}
+
+.data-art-col p{
+    flex-basis: 25%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid white;
+}
+
+.data-art .row2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px ;
+}
+
+.data-art-col2{
+    flex: 25%;
+    max-width: 35%;
+    padding: 8px 12px;
+}
+
+.data-art-col2 p{
+    flex-basis: 25%;
+    background: lightblue;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    border: 4px solid white;
+}
+
+.data-art-col2 h2{
+    margin-top: 80px;
+}
+
+
